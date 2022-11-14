@@ -23,8 +23,7 @@ class BankAccountTest {
     @Test
     void getDollars() {
         BankAccount bankAccount = new BankAccount("Trevor", "Edwards", 1000.00);
-        bankAccount.deposit(100.00, true);
-        assertEquals(1100.00, bankAccount.getDollars(), 0);
+        assertEquals(1000.00, bankAccount.getDollars(), 0);
     }
 }
 
