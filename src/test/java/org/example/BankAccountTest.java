@@ -8,17 +8,20 @@ class BankAccountTest {
 
     @Test
     void deposit() {
-        fail("No test parameters");
+        BankAccount bankAccount = new BankAccount("Trevor", "Edwards", 1000.00);
+        double dollars = bankAccount.deposit(100.00, true);
+        assertEquals(1100.00, dollars, 0);
+        assertEquals(1100.00, bankAccount.getDollars(), 0);
     }
 
     @Test
     void withdraw() {
+
     }
 
     @Test
     void getDollars() {
+
     }
-
-
 }
 
